@@ -1,3 +1,37 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: auto;
+  max-width: 1000px;
+  padding: 5px;
+}
+
+h1{
+  font-weight: 200;
+}
+
+h2 {
+  padding-top: 75px;
+}
+
+.thingsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.thing {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 80px;
+  height: 315px;
+}
+
+.thing > img {
+  height: 100%;
 }

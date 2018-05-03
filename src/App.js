@@ -13,7 +13,7 @@ export default class App extends Component {
 
     let money = 57000000000;
     while(money>0) {
-      const choice = Math.round(Math.random() * (goodThings.length - 1));
+      const choice = Math.floor(Math.random() * goodThings.length);
       this.state.counts[choice] = this.state.counts[choice] ? this.state.counts[choice] + 1 : 1;
       money -= goodThings[choice].cost;
     }
